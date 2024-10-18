@@ -1,16 +1,22 @@
 import turtle as trtl
-#Semi Circle size
+
+
+#Small crescent size
 painter = trtl.Turtle()
-painter.goto(0,0)
-painter.speed(0)
-painter.pensize(5)
-painter.fillcolor('black')
-painter.circle(180,180)
-painter.right(220)
 painter.penup()
-painter.goto(-230,80)
+painter.goto(-350,350)
 painter.pendown()
-painter.circle(180,180)
+painter.speed(2)
+painter.pensize(5)
+painter.fillcolor('white')
+painter.right(180)
+painter.circle(70,180)
+#Big crescent
+
+
+
+painter.right(-90)
+painter.circle(60,180)
 painter.penup()
 
 
