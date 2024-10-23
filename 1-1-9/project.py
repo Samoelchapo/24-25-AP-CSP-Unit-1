@@ -4,22 +4,25 @@ import turtle as trtl
 global turtle
 turtle = trtl.Turtle()
 painter = trtl.Turtle()
-turtle.speed(0)
+turtle.speed(100)
+painter.penup()
+painter.goto(-350, 350)
+painter.pendown()
 def crescent_moon():
     global turtle
     # Small crescent size
+
     turtle = trtl.Turtle()
+    turtle.hideturtle()
     painter.color('white')
-    painter.penup()
-    painter.goto(-350, 350)
-    painter.begin_fill()
-    painter.pendown()
-    painter.speed(2)
+    turtle.begin_fill()
+
+    painter.speed(100)
     painter.pensize(5)
-    painter.fillcolor('white')
     painter.right(180)
     painter.circle(70, 100)
 # Big crescent
+    painter.begin_fill()
     painter.left(120)
     painter.penup()
     painter.goto(-350, 350)
@@ -96,11 +99,11 @@ turtle.goto(-350,350)
 turtle.pendown()
 crescent_moon()
 
-turtle.color('red')
+turtle.color('white')
 turtle.begin_fill()
 turtle.goto(470,0)
-turtle.goto(-470,-400)
-turtle.goto(-500,0)
+turtle.goto(470,-400)
+turtle.goto(-500,-400)
 turtle.goto(-490,0)
 turtle.goto(0,0)
 turtle.end_fill()
