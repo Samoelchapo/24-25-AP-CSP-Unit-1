@@ -35,12 +35,16 @@ def crescent_moon():
     painter.left(250)
     painter.circle(150, 50)
 
+    painter.end_fill()
+
 
 def draw_star():
     global turtle
+
     turtle.begin_fill()
+    turtle.fillcolor('white')
     for numbers in range(5):
-        turtle.forward(30)
+        turtle.forward(50)
         turtle.right(145)
     turtle.end_fill()
 
@@ -108,8 +112,50 @@ turtle.goto(-490,0)
 turtle.goto(0,0)
 turtle.end_fill()
 turtle.penup()
-turtle.goto(-275,350)
+turtle.goto(-250,350)
+turtle.begin_fill()
 turtle.pendown()
+draw_star()
+
+turtle.end_fill()
+
+turtle.penup()
+turtle.goto(-200,300)
+turtle.left(5)
+turtle.pendown()
+turtle.begin_fill()
+draw_star()
+turtle.end_fill()
+
+turtle.penup()
+turtle.goto(-210,250)
+turtle.left(5)
+turtle.pendown()
+turtle.begin_fill()
+draw_star()
+turtle.end_fill()
+
+turtle.penup()
+turtle.goto(-300,300)
+turtle.left(5)
+turtle.pendown()
+turtle.begin_fill()
+draw_star()
+turtle.end_fill()
+
+turtle.penup()
+turtle.goto(-280, 250)
+turtle.left(5)
+turtle.pendown()
+turtle.begin_fill()
+draw_star()
+turtle.end_fill()
+
+
+
+
+
+
 
 
 
